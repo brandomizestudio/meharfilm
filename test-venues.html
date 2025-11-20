@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Venues & Wedding Photography in Hisar | Mehar Film</title>
+  <meta name="description" content="Internal testing view for Hisar wedding venues and photography data. Mehar Film — Luxury Photography & Film Company for all celebrations.">
+  <meta name="keywords" content="best wedding photography in Hisar, wedding photography in Hisar, pre-wedding photography in Hisar, couple photoshoot in Hisar, couple photography, portrait photography, food photography in Hisar, best photographer of Hisar, photographer near me in Hisar, birthday photography in Hisar, corporate photography in Hisar">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://meharfilm.com/test-venues/">
+  <link rel="alternate" hreflang="en" href="https://meharfilm.com/test-venues/" />
+  <link rel="alternate" hreflang="x-default" href="https://meharfilm.com/test-venues/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Test Venues & Wedding Photography in Hisar | Mehar Film">
+  <meta property="og:description" content="Internal testing view for Hisar wedding venues and photography data. Mehar Film — Luxury Photography & Film Company for all celebrations.">
+  <meta property="og:url" content="https://meharfilm.com/test-venues/">
+  <meta property="og:site_name" content="Mehar Film">
+  <meta property="og:image" content="https://meharfilm.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Test Venues & Wedding Photography in Hisar | Mehar Film">
+  <meta name="twitter:description" content="Internal testing view for Hisar wedding venues and photography data. Mehar Film — Luxury Photography & Film Company for all celebrations.">
+  <meta name="twitter:image" content="https://meharfilm.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:site" content="@mehar_film">
+  <meta name="twitter:creator" content="@mehar_film">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .status {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="status" id="status">Loading Hisar venues for our Luxury Photography & Film Company...</div>
+  <h1>Hisar Wedding Photography Venue Tests</h1>
+  <p style="text-align:center; max-width:800px; margin:0 auto 30px; color:#555;">This internal dashboard keeps our best wedding photography in Hisar, pre-wedding photography in Hisar, couple photoshoot in Hisar, portrait photography, birthday photography in Hisar, food photography in Hisar, and corporate photography in Hisar projects aligned with the best photographer of Hisar and every photographer near me in Hisar inquiry.</p>
+  <div id="venues-grid" class="grid"></div>
+
+  <script src="js/venues-data.js"></script>
+  <script>
+    console.log('Script started');
+    console.log('venuesData:', venuesData);
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOM loaded');
+      const container = document.getElementById('venues-grid');
+      const statusDiv = document.getElementById('status');
+      
+      if (!venuesData) {
+        statusDiv.style.background = 'red';
+        statusDiv.textContent = 'ERROR: venuesData not found!';
+        return;
+      }
+      
+      statusDiv.textContent = `Loading ${venuesData.length} Hisar venues...`;
+      
+      venuesData.forEach((venue, index) => {
+        console.log('Creating card for:', venue.name);
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${venue.image}" alt="${venue.name} wedding venue in Hisar">
+          <div class="card-content">
+            <h3>${venue.name}</h3>
+            <p>📍 ${venue.location}</p>
+            <p>Capacity: ${venue.capacity}</p>
+            <p>Food: ${venue.food}</p>
+            <p>Area: ${venue.area}</p>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+      
+      statusDiv.style.background = '#4CAF50';
+      statusDiv.textContent = `✅ Successfully loaded ${venuesData.length} venues for wedding photography in Hisar!`;
+      
+      console.log('Cards created:', container.children.length);
+    });
+  </script>
+  <script>
+    (function() {
+      const { pathname, search, hash } = window.location;
+      if (pathname.endsWith('/index.html')) {
+        const cleanPath = pathname.replace(/index\.html$/, '/') || '/';
+        history.replaceState({}, '', `${cleanPath}${search}${hash}`);
+      }
+    })();
+  </script>
+</body>
+</html>
+

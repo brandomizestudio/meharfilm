@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Stories & Pre-wedding Photography in Hisar | Mehar Film</title>
+  <meta name="description" content="Wedding stories and pre-wedding photography in Hisar. Mehar Film captures cinematic love stories with luxury photography & film production.">
+  <meta name="keywords" content="best wedding photography in Hisar, wedding photography in Hisar, pre-wedding photography in Hisar, couple photoshoot in Hisar, couple photography, portrait photography, best photographer of Hisar, photographer near me in Hisar, birthday photography in Hisar, corporate photography in Hisar, food photography in Hisar">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://meharfilm.com/stories/">
+  <link rel="alternate" hreflang="en" href="https://meharfilm.com/stories/" />
+  <link rel="alternate" hreflang="x-default" href="https://meharfilm.com/stories/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Stories & Pre-wedding Photography in Hisar | Mehar Film">
+  <meta property="og:description" content="Wedding stories and pre-wedding photography in Hisar. Mehar Film captures cinematic love stories with luxury photography & film production.">
+  <meta property="og:url" content="https://meharfilm.com/stories/">
+  <meta property="og:site_name" content="Mehar Film">
+  <meta property="og:image" content="https://meharfilm.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Stories & Pre-wedding Photography in Hisar | Mehar Film">
+  <meta name="twitter:description" content="Wedding stories and pre-wedding photography in Hisar. Mehar Film captures cinematic love stories with luxury photography & film production.">
+  <meta name="twitter:image" content="https://meharfilm.com/public/image-page-data/wedding/UWF09905.jpeg">
+  <meta name="twitter:site" content="@mehar_film">
+  <meta name="twitter:creator" content="@mehar_film">
+  
+  <link rel="preload" href="css/style.css?v=2.1" as="style">
+  <link rel="preload" href="css/components.css?v=2.1" as="style">
+  <link rel="stylesheet" href="css/style.css?v=2.1">
+  <link rel="stylesheet" href="css/components.css?v=2.1">
+  <link rel="stylesheet" href="css/animations.css?v=2.1" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css?v=2.1"></noscript>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header scrolled">
+    <nav class="nav">
+      <a href="/" class="logo">Mehar Film</a>
+      
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="stories.html">Stories</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="makeup-artists.html">Makeup Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+      </ul>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Header Section -->
+  <section class="section bg-silver" style="padding-top: 8rem;">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h1 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Wedding Photography Stories in Hisar</h1>
+        <p class="section-description">Every couple has a unique story to tell, and our Luxury Photography & Film Company showcases best wedding photography in Hisar, cinematic pre-wedding photography in Hisar, couple photoshoot in Hisar experiences, portrait photography, and even birthday or corporate celebrations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Tabs -->
+  <div class="filter-tabs">
+    <div class="container">
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Stories</button>
+        <button class="filter-btn" data-filter="wedding">Weddings</button>
+        <button class="filter-btn" data-filter="pre-wedding">Pre-Weddings</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stories Grid -->
+  <section class="section bg-white">
+    <div class="container">
+      <div id="stories-grid" class="grid grid-cols-3"></div>
+      
+      <div id="empty-state" class="text-center" style="padding: 4rem 0; display: none;">
+        <p style="font-size: 1.125rem; color: var(--color-dark-light);">No stories found in this category.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Story Modal -->
+  <div id="story-modal" class="story-modal">
+    <div class="story-modal-overlay"></div>
+    <div class="story-modal-content">
+      <button class="story-modal-close" aria-label="Close">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      
+      <div class="story-modal-body">
+        <div class="story-modal-hero">
+          <img id="modal-hero-image" src="" alt="Wedding photography in Hisar story highlight">
+          <div class="story-modal-badge" id="modal-badge"></div>
+        </div>
+        
+        <div class="story-modal-info">
+          <h2 id="modal-couple-name"></h2>
+          <div class="story-modal-meta">
+            <span id="modal-location"></span>
+            <span class="story-modal-separator">•</span>
+            <span id="modal-date"></span>
+          </div>
+          <p id="modal-story" class="story-modal-description"></p>
+          
+          <div class="story-modal-gallery" id="modal-gallery"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEO Content Block -->
+  <section aria-labelledby="stories-hisar" class="section bg-silver">
+    <div class="container" style="max-width: 56rem;">
+      <h2 id="stories-hisar">Wedding stories from Hisar</h2>
+      <p>Real couples, cinematic storytelling, luxury wedding coverage across Hisar — our wedding stories showcase the full experience of working with Mehar Film. Each story includes behind-the-scenes insights, location details, coverage highlights and final gallery previews from weddings and pre-wedding sessions photographed in Hisar and beyond.</p>
+      
+      <p>We document every wedding with a blend of editorial portraits, candid moments and cinematic film sequences. Our approach focuses on authentic emotions, flattering light and storytelling that feels natural rather than overly posed. Browse stories to see how we handle different venues, lighting conditions and couple personalities — from intimate elopements to grand celebrations.</p>
+      
+      <p>Looking for inspiration for your own Hisar wedding photography? Each story includes details about the couple's vision, our creative process and how we collaborated with makeup artists, venues and planners to bring everything together. Get in touch to discuss your wedding story and how we can capture it with the same care and creativity.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Mehar Film</h3>
+          <p>Luxury Photography & Film Company for best wedding photography in Hisar, pre-wedding photography in Hisar, portrait photography, birthday celebrations, food photography in Hisar, and corporate photography in Hisar.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="makeup-artists.html">Makeup Artists</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:meharfilm@gmail.com">meharfilm@gmail.com</a></li>
+            <li><a href="tel:+919518470034">+91 95184 70034</a></li>
+            <li>Hisar, India</li>
+            <li><a href="https://instagram.com/mehar_film" target="_blank" rel="noopener">@mehar_film</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Mehar Film. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-credit">
+          Secured & Created by
+          <a href="https://brandomize.netlify.app/" target="_blank" rel="noopener">brandomize.studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/stories-data.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    let currentFilter = 'all';
+    
+    function resolveStoriesData() {
+      return typeof storiesData !== 'undefined'
+        ? storiesData
+        : (typeof window !== 'undefined' && window.storiesData ? window.storiesData : null);
+    }
+    
+    function getHeroAltText(story) {
+      const context = story.type === 'pre-wedding' ? 'pre-wedding photography in Hisar' : 'wedding photography in Hisar';
+      return `${story.coupleName} ${context} at ${story.location}`;
+    }
+    
+    function getGalleryAltText(story, index = 0) {
+      const context = story.type === 'pre-wedding' ? 'pre-wedding photography in Hisar' : 'wedding photography in Hisar';
+      return `${story.coupleName} ${context} gallery frame ${index + 1} at ${story.location}`;
+    }
+    
+    function createStoryCard(story) {
+      const card = document.createElement('div');
+      card.className = 'story-card';
+      const heroAlt = getHeroAltText(story);
+      card.innerHTML = `
+        <a href="#" class="story-card-link" data-story-id="${story.id}">
+          <div class="card-image">
+            <img src="${story.heroImage}" alt="${heroAlt}" loading="lazy">
+            <span class="story-badge">${story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding'}</span>
+          </div>
+          <div class="card-content">
+            <h3>${story.coupleName}</h3>
+            <p class="card-location">
+              <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              ${story.location}
+            </p>
+            <p class="story-excerpt">${story.excerpt}</p>
+            <span class="story-link">View Story →</span>
+          </div>
+        </a>
+      `;
+      
+      const link = card.querySelector('.story-card-link');
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openStoryModal(story);
+      });
+      
+      return card;
+    }
+    
+    function renderStories(filter = 'all') {
+      const container = document.getElementById('stories-grid');
+      const emptyState = document.getElementById('empty-state');
+      
+      if (!container) {
+        console.error('Stories grid container not found');
+        return;
+      }
+      
+      const stories = resolveStoriesData();
+      
+      if (!stories) {
+        console.error('storiesData is not defined');
+        container.innerHTML = '<p style="text-align: center; padding: 2rem; color: var(--color-dark-light);">Unable to load stories. Please refresh the page.</p>';
+        return;
+      }
+      
+      if (!Array.isArray(stories) || stories.length === 0) {
+        console.error('storiesData is empty or not an array');
+        container.innerHTML = '<p style="text-align: center; padding: 2rem; color: var(--color-dark-light);">No stories available.</p>';
+        return;
+      }
+      
+      const filtered = filter === 'all' 
+        ? stories 
+        : stories.filter(story => story.type === filter);
+      
+      container.innerHTML = '';
+      
+      if (filtered.length === 0) {
+        emptyState.style.display = 'block';
+        return;
+      } else {
+        emptyState.style.display = 'none';
+      }
+      
+      filtered.forEach(story => {
+        container.appendChild(createStoryCard(story));
+      });
+    }
+    
+    // Open story modal
+    function openStoryModal(story) {
+      const modal = document.getElementById('story-modal');
+      
+      // Populate modal content
+      document.getElementById('modal-hero-image').src = story.heroImage;
+      document.getElementById('modal-hero-image').alt = getHeroAltText(story);
+      document.getElementById('modal-badge').textContent = story.type === 'pre-wedding' ? 'Pre-Wedding' : 'Wedding';
+      document.getElementById('modal-couple-name').textContent = story.coupleName;
+      document.getElementById('modal-location').textContent = story.location;
+      document.getElementById('modal-date').textContent = story.date;
+      document.getElementById('modal-story').textContent = story.fullStory;
+      
+      // Populate gallery
+      const gallery = document.getElementById('modal-gallery');
+      gallery.innerHTML = '';
+      story.images.forEach((image, index) => {
+        const item = document.createElement('div');
+        item.className = 'story-modal-gallery-item';
+        const img = document.createElement('img');
+        img.src = image;
+        img.alt = getGalleryAltText(story, index);
+        img.loading = 'lazy';
+
+        const applyOrientation = () => {
+          if (!img.naturalWidth || !img.naturalHeight) return;
+          if (img.naturalHeight > img.naturalWidth) {
+            item.classList.add('portrait');
+          } else {
+            item.classList.remove('portrait');
+          }
+        };
+
+        if (img.complete) {
+          applyOrientation();
+        } else {
+          img.addEventListener('load', applyOrientation);
+        }
+
+        item.appendChild(img);
+        gallery.appendChild(item);
+      });
+      
+      // Show modal
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // Close story modal
+    function closeStoryModal() {
+      const modal = document.getElementById('story-modal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', () => {
+      renderStories('all');
+      
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+          currentFilter = filter;
+          
+          // Update active state
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Render filtered stories
+          renderStories(filter);
+        });
+      });
+      
+      // Modal close button
+      document.querySelector('.story-modal-close').addEventListener('click', closeStoryModal);
+      
+      // Close on overlay click
+      document.querySelector('.story-modal-overlay').addEventListener('click', closeStoryModal);
+      
+      // Close on escape key
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeStoryModal();
+        }
+      });
+    });
+  </script>
+  <script>
+    (function() {
+      const { pathname, search, hash } = window.location;
+      if (pathname.endsWith('/index.html')) {
+        const cleanPath = pathname.replace(/index\.html$/, '/') || '/';
+        history.replaceState({}, '', `${cleanPath}${search}${hash}`);
+      }
+    })();
+  </script>
+</body>
+</html>
+
