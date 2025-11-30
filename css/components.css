@@ -111,7 +111,7 @@
   .gallery-arrow-left {
     left: 1.5rem;
   }
-  
+
   .gallery-arrow-right {
     right: 1.5rem;
   }
@@ -380,7 +380,7 @@
   margin-bottom: 1.5rem;
 }
 
-.showcase-content > p {
+.showcase-content>p {
   font-size: 1.125rem;
   color: var(--color-dark-light);
   margin-bottom: 2rem;
@@ -452,7 +452,7 @@
 .showcase-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -547,7 +547,7 @@
   margin-bottom: 0.5rem;
 }
 
-.contact-card > p {
+.contact-card>p {
   color: var(--color-dark-light);
   margin-bottom: 1rem;
 }
@@ -767,6 +767,7 @@
     opacity: 0;
     transform: translateY(50px) scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -779,19 +780,19 @@
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  
+
   .story-modal {
     padding: 1rem;
   }
-  
+
   .story-modal-hero {
     height: 300px;
   }
-  
+
   .story-modal-info {
     padding: 2rem;
   }
-  
+
   .story-modal-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -801,127 +802,127 @@
   .gallery-arrow {
     opacity: 1;
   }
-  
+
   /* Showcase Mobile */
   .showcase-grid {
     gap: 2.5rem;
   }
-  
+
   .showcase-content h2 {
     font-size: 1.75rem;
     margin-bottom: 1.25rem;
   }
-  
-  .showcase-content > p {
+
+  .showcase-content>p {
     font-size: 1rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .showcase-features {
     gap: 1.25rem;
   }
-  
+
   .showcase-feature-icon {
     width: 2.5rem;
     height: 2.5rem;
     margin-right: 0.875rem;
   }
-  
+
   .showcase-feature-icon svg {
     width: 1.25rem;
     height: 1.25rem;
   }
-  
+
   .showcase-feature h3 {
     font-size: 1rem;
     margin-bottom: 0.375rem;
   }
-  
+
   .showcase-feature p {
     font-size: 0.8125rem;
     line-height: 1.5;
   }
-  
+
   .showcase-image {
     height: 400px;
   }
-  
+
   /* Contact Cards Mobile */
   .contact-card {
     padding: 2rem 1.5rem;
   }
-  
+
   .contact-card h3 {
     font-size: 1.125rem;
   }
-  
-  .contact-card > p {
+
+  .contact-card>p {
     font-size: 0.875rem;
   }
-  
+
   /* Feature Cards Mobile */
   .feature-card {
     padding: 1.75rem;
   }
-  
+
   .feature-card h3 {
     font-size: 1rem;
   }
-  
+
   .feature-card p {
     font-size: 0.8125rem;
   }
-  
+
   .story-modal {
     padding: 0.5rem;
   }
-  
+
   .story-modal-content {
     border-radius: 1.5rem;
     max-height: 95vh;
   }
-  
+
   .story-modal-close {
     top: 1rem;
     right: 1rem;
     width: 2rem;
     height: 2rem;
   }
-  
+
   .story-modal-close svg {
     width: 18px;
     height: 18px;
   }
-  
+
   .story-modal-hero {
     height: 250px;
   }
-  
+
   .story-modal-badge {
     top: 1rem;
     left: 1rem;
     font-size: 0.6875rem;
     padding: 0.375rem 0.75rem;
   }
-  
+
   .story-modal-info {
     padding: 1.5rem;
   }
-  
+
   .story-modal-info h2 {
     font-size: 1.5rem;
   }
-  
+
   .story-modal-meta {
     font-size: 0.875rem;
     flex-wrap: wrap;
   }
-  
+
   .story-modal-description {
     font-size: 0.9375rem;
     margin-bottom: 2rem;
   }
-  
+
   .story-modal-gallery {
     gap: 0.75rem;
   }
@@ -937,4 +938,3 @@
     grid-column: span 1;
   }
 }
-
