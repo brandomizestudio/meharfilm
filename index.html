@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/Fevicon/IMG_7447.jpg">
   <title>Best Wedding Photography in Hisar | Mehar Film — Luxury Photography & Film Company</title>
   <meta name="description"
     content="Premium wedding photography in Hisar by Mehar Film (acquired by Brandomize) — Luxury Photography & Film Company. Cinematic films, portraits & pre-wedding shoots.">
@@ -639,7 +640,6 @@
             <span class="story-modal-separator">•</span>
             <span id="modal-date"></span>
           </div>
-          <p id="modal-story" class="story-modal-description"></p>
 
           <div class="story-modal-gallery" id="modal-gallery"></div>
         </div>
@@ -915,7 +915,6 @@
                 <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 ${story.location}
               </p>
-              <p class="story-excerpt">${story.excerpt}</p>
               <span class="story-link">View Story →</span>
             </div>
           </a>
@@ -941,7 +940,6 @@
         document.getElementById('modal-couple-name').textContent = story.coupleName;
         document.getElementById('modal-location').textContent = story.location;
         document.getElementById('modal-date').textContent = story.date;
-        document.getElementById('modal-story').textContent = story.fullStory;
 
         // Populate gallery
         const gallery = document.getElementById('modal-gallery');

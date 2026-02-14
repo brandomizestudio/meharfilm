@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="public/Fevicon/IMG_7447.jpg">
   <title id="page-title">Wedding Story — Photography in Hisar | Mehar Film</title>
   <meta name="description" content="A cinematic wedding story photographed in Hisar. Luxury portraits, candid emotions and premium film production by Mehar Film (acquired by Brandomize).">
   <meta name="keywords" content="Brandomize, best wedding photography in Hisar, wedding photography in Hisar, pre-wedding photography in Hisar, couple photoshoot in Hisar, couple photography, portrait photography, best photographer of Hisar, photographer near me in Hisar, food photography in Hisar, birthday photography in Hisar, corporate photography in Hisar">
@@ -66,7 +67,6 @@
   <!-- Story Content -->
   <section class="section bg-white">
     <div class="container" style="max-width: 56rem;">
-      <p id="story-full-text" class="fade-in" style="font-size: 1.125rem; color: var(--color-dark-light); line-height: 1.8; margin-bottom: 4rem;"></p>
 
       <!-- Image Gallery -->
       <div id="story-images" style="display: flex; flex-direction: column; gap: 2rem;"></div>
@@ -197,15 +197,10 @@
             ${story.location} • ${story.date}
           </div>
           
-          <p style="font-size: 1.25rem; color: rgba(255,255,255,0.9); max-width: 48rem; line-height: 1.6;">
-            ${story.excerpt}
-          </p>
         </div>
       </div>
     `;
     
-    // Render full story text
-    document.getElementById('story-full-text').textContent = story.fullStory;
     
     // Render images
     const imagesContainer = document.getElementById('story-images');
